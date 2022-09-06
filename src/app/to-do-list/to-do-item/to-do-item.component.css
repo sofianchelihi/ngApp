@@ -1,0 +1,48 @@
+.notchecked{
+   background-color: rgb(218, 218, 218);
+}
+.checked{
+   background-color: rgb(100, 255, 100);
+}
+
+@media screen and (min-width: 900px) and (max-width: 2000px){
+   .ToDoDiv{
+      width: 62%;
+   }
+}
+
+@media screen and (min-width: 768px) and (max-width: 900px){
+   .ToDoDiv{
+      width: 70%;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width:576px){
+   .ToDoDiv{
+      width: 83%;
+  }
+}
+
+
+@media screen and (max-width: 576px) and (min-width:200px){
+.ToDoDiv{
+   display: grid!important;
+   grid-template-areas: 
+     "check tach tach tach tach "
+     "delet delet delet delet delet"
+   ;
+   width: 93%;
+}
+.delet{
+   grid-area: delet;
+   height: 60px;
+   width: auto!important;
+}
+.check{
+   grid-area: check;
+}
+.tach{
+   grid-area: tach ;
+   width: auto;
+}
+}

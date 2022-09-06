@@ -1,0 +1,6 @@
+<div style="margin-top: 30px;">
+<app-to-do-input (add)="add($event)"></app-to-do-input>
+<div *ngFor="let todo of liste">
+    <app-to-do-item [item]="todo" (change)="check($event)" (delet)="suprim($event)"></app-to-do-item>
+</div>
+</div>

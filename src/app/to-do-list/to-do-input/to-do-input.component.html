@@ -1,0 +1,8 @@
+<div class="container mx-auto row my-2 add">
+    <div class="col-md-9 col-sm-9 div1">
+        <input type="text" class="form-control" [(ngModel)]="tach" [value]="tach">
+    </div>
+    <div class="col-md-3 col-sm-3 div2">
+        <button class="btn btn-danger" (click)="addTach()" [disabled]="tach===''">Add Tach</button>
+    </div>
+</div>

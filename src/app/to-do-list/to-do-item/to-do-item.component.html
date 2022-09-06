@@ -1,0 +1,11 @@
+<div class="container mx-auto row border border-gray border-2 rounded  ToDoDiv " [ngClass]="{'checked':item.checked,'notchecked':!item.checked}" style="height: auto; overflow: auto; min-height: 60px;margin-bottom: 2px;padding-top: 10px;">  
+    <div class="col-md-1 col-sm-1  form-check">
+        <input type="checkbox" name="check" id="check" class="form-check-input check" [checked]="item.checked" [(ngModel)]="item.checked" (change)="done()">
+    </div>
+    <div class="col-md-8 col-sm-8 tach">
+        <p class="text-wrap"> {{item.tach}} </p>
+    </div>
+    <div class="col-md-3 col-sm-3 delet ">
+        <button type="button" class="btn btn-danger w-100" (click)="suprim()"> delet</button>
+    </div>
+</div>
